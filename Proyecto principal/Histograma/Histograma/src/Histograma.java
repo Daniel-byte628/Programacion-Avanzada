@@ -1,9 +1,11 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Histograma {
     static String decision;
     static Boolean opciones = true;
     static char way;
+    static ArrayList<String> descarga = new ArrayList<String>();
 
     public static void main(String[] args) throws Exception {
         // Creamos un objeto
@@ -19,6 +21,7 @@ public class Histograma {
         for (int i = 0; i < arrayLength - 2 && opciones == true; i++) {
             user.textos(objeto2, objeto3, objeto4, i + 1);
             way = user.elegir();
+            descarga.add(String.valueOf(way));
             opciones = user.verificar(objeto5, objeto6, objeto7, i + 1, way);
         }
         if (opciones == true) {
@@ -66,5 +69,9 @@ public class Histograma {
         System.out.println("Elige tu decision A o B");
         caracter = sc.next().charAt(0);
         return caracter;
+    }
+
+    void descargarlineatiempo() {
+        
     }
 }
