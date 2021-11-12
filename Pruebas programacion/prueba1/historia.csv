@@ -1,0 +1,11 @@
+id;mensaje ;opcion1;opcion2;id1 ;id2;id3
+1;Abre los ojos, y te das cuenta que estas en una celda. Al lado tuyo te das cuenta que tienes una lija, y tienes dos opciones:;Romper los barrotes de la puerta;Romper los barrotes  de la ventana ;a;b;a
+2;Rompiste los barrotes. Bien hecho. Ahora te toca pensar en:;Esperar a que se haga de noche ;Sales sin dudarlo;a;b;a
+3;Estas de noche, encontraste un guardia de seguridad. ¿Qué haras?;Lo noqueas;Pasas desapercibido, y te metes a un cuarto;a;b;a
+4;Estas en el cuarto, y ves lo siguiente:;Una ventilacion y te metes a ella;Esperas a que el guardia se vaya ;b;a;b
+5;Estas en la ventilacion de la carcel, y ves por una rejilla un policia que deja su arma en la mesa.;Bajas y tomas el arma, pero no puedes volver a subir a la ventilacion;Sigues por la ventilacion hasta llegar al techo;a;b;a
+6;Con el arma en la mano, sales de la habitacion y te ves frente a frente con otro guardia;Lo matas;Intentas huir;a;b;a
+7;Al lado de su cuerpo encuentras las llaves que abren las celdas de toda la carcel. Al lado esta las celdas de algunos criminales.;Liberas a los delincuentes;Te vas;a;b;a
+8;Al haber tremendo caos por toda la carcel, ves desde lejos una chica hermosa;Vas y la besas;Intentas huir con los demas ;a;b;a
+9;Al besarla te das cuenta que era la hija del jefe de la carcel, ella esta tan sorprendida que se enamora a primera vista. Y te propone matrimonio;Aceptas;Lo rechazas y huyes;a;b;a
+10;Ella te lleva por un pasadiso secreto y salen juntos. Se casan, dejan el pasado atrás,y son felices por siempre.;;;a;a;a
