@@ -1,5 +1,9 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class Histograma {
     static String decision;
@@ -32,6 +36,7 @@ public class Histograma {
             // pantalla perdedora
             System.out.println("Perdio");
         }
+        user.descargarlineatiempo(objeto2,objeto3,objeto4,descarga);
     }
 
     void textos(Columna obj1, Columna obj2, Columna obj3, int num) {
@@ -71,7 +76,19 @@ public class Histograma {
         return caracter;
     }
 
-    void descargarlineatiempo() {
-        
+    void descargarlineatiempo(Columna obj1, Columna obj2, Columna obj3,ArrayList<String> opciones) throws IOException {
+        String ruta = "C:/Users/danig/OneDrive/Documentos/2 semestre/Programacion avanzada/Pruebas programacion/prueba1/lineatiempo.csvA";
+            File file = new File(ruta);
+            int arrayLength = opciones.size();
+            // Si el archivo no existe es creado
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+            FileWriter fw = new FileWriter(file);
+            BufferedWriter bw = new BufferedWriter(fw);
+            for (int i = 0; i < arrayLength; i++) {
+                bw.write(obj1.unacolumna.get(i+1) +";" + obj2.unacolumna.get(i+1)+";"+obj3.unacolumna.get(i+1) +"\n"); 
+            }
+            bw.close();
     }
 }
